@@ -32,7 +32,7 @@ h6 {
 .menu {
     background-color: #455bc4;
     padding: 0 40px;
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
     font-size: 0;
 }
@@ -81,7 +81,7 @@ form {
 .form-title {
     text-align: center;
     margin-bottom: 30px;
-    font-size: 30px;
+    font-size: 2rem;
     color: #2d3436;
 }
 
@@ -94,7 +94,7 @@ form {
     display: block;
     margin-bottom: 8px;
     color: #636e72;
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 .checkbox {
@@ -128,7 +128,7 @@ form {
     background-color: #0984e3;
     color: white;
     border-radius: 10px;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
     margin-top: 10px;
@@ -236,9 +236,96 @@ form:focus-within {
 .card:nth-child(2) {
     border: 3px solid green;
 }
-.card ul li::before{
-    content:"\2022";
+.card ul li::before {
+    content: "✓";
     font-size: 1.5rem;
     margin-right: 10px;
     display: inline-block;
+}
+
+/* Bài Tập 4 */
+
+.blog-container {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+.blog-post h1 {
+    font-size: 2.5rem;
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+.blog-image {
+    width: auto;
+    height: 300px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+.blog-post p:first-of-type::first-letter {
+    font-size: 60px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.blog-post p::first-line {
+    font-weight: bold;
+    color: #334155;
+}
+::selection {
+    background-color: #ffdd57;
+    color: #111;
+}
+blockquote {
+    background-color: #f0fdfa;
+    padding: 5px 10px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #134e4a;
+}
+blockquote::before {
+    content: ' " ';
+    font-size: 3rem;
+    color: #14b8a6;
+}
+h2:not(h1),
+h3:not(h1),
+h4:not(h1),
+h5:not(h1),
+h6:not(h1) {
+    color: #0f766e;
+    border-left: 5px solid #0f766e;
+    padding-left: 10px;
+    margin-top: 30px;
+}
+
+.comments {
+    margin-top: 45px;
+}
+
+.comment {
+    background-color: #f8fafc;
+    padding: 18px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+}
+
+.comment p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.comment:hover {
+    background-color: #ecfeff;
+}
+.comment:nth-of-type(odd) {
+    border-left: 5px solid #0f766e;
+}
+
+.comment:nth-of-type(even) {
+    border-left: 5px solid #f97316;
 }
