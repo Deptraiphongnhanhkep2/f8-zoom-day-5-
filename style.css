@@ -291,11 +291,11 @@ blockquote::before {
     font-size: 3rem;
     color: #14b8a6;
 }
-h2:not(h1),
-h3:not(h1),
-h4:not(h1),
-h5:not(h1),
-h6:not(h1) {
+blog-post h2:not(h1),
+blog-post h3:not(h1),
+blog-post h4:not(h1),
+blog-post h5:not(h1),
+blog-post h6:not(h1) {
     color: #0f766e;
     border-left: 5px solid #0f766e;
     padding-left: 10px;
